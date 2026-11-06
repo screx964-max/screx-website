@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+ <html 1ang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>株式会社 S.C.REX | 公式ホームページ</title>
+    <style>
+      body {
+        background-color: #050505;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        color: #d4af37;
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 18px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Arial Narrow", "Arial", sans-serif
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #D8C6A0;
+  border-bottom: 1px solid #8B734B;
+}
+
+header span {
+  font-size: 18px;
+}
+img{
+  border-radius: 8px;
+  border: 1px solid #8B734B;
+  margin: 20px 0;
+}
+@media (max-width: 600px) {
+  h2 { margin-top: 70px !important; }
+  .logo-space { height: 30px !important; }
+  header { padding: 15px 0; letter-spacing: 2px; }
+  div:has(> img + img) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div:has(> img + img) img {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+.menu-button {
+  background: transparent;
+  border: none;
+  color: #D8C6A0;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.menu-list {
+  display: none;
+}
+.menu-list.open {
+  display: block;
+  background: #08090B;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top: 65px;
+  border: 1px solid #D8C6A0;
+  border-radius: 6px;
+}
+.menu-list a {
+  color: #D8C6A0;
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <span>S.C.REX</span>
+    <button class="menu-button" onclick="document.querySelector('.menu-list').classList.toggle('open')">MENU ≡</button>
+    <nav class="menu-list">
+      <a href="#about" onclick="document.querySelector('.menu-list').classList.remove('open')">私たちについて</a>
+      <a href="#services" onclick="document.querySelector('.menu-list').classList.remove('open')">事業内容</a>
+      <a href="#contact" onclick="document.querySelector('.menu-list').classList.remove('open')">お問い合わせ</a>
+    </nav>
+  </header>
+  <div class="logo-space" style="height: 80px;"></div>
+  <img src="会社ロゴ.png" alt="S.C.REX 会社ロゴ" style="width: 100%; max-width: 700px; height: auto; border: none;">
+  <p>暮らしのその先へ</p>
+  <h2 id="about" style="color:#D8C6A0; margin-top: 150px;">私たちについて</h2>
+  <p style="color: #cccccc; font-size: 14px ; text-align: left;">
+    私たちS.C.REXは、<br><br>
+    お客様との信頼関係を何よりも大切にしています。<br><br>
+    外構・エクステリア工事は、住まいの印象だけでなく、日々の暮らしにも深く関わるもの。<br><br>
+    だからこそ、一つ一つのご相談にも真摯に向き合い、<br><br>
+    お客様の想いやご希望を丁寧にくみ取ることを<br><br>
+    心がけています。<br><br>
+    工事が終わってからも「S.C.REXに頼んでよかった」<br><br>
+    と思っていただけるように。<br><br>
+    安心と信頼を積み重ねながら、<br><br>
+    理想の暮らしづくりをお手伝いします。
+  </p>
+  <h2 id="services" style="color: #D8C6A0; margin-top: 150px;">事業内容</h2>
+  <h3 style="color: #FFFFFF;">外構工事</h3>
+  <img src="外構工事.jpg" alt="外構工事のイメージ写真" style="width: 100%; max-width: 800px; height:auto;" >
+  <p style="color: #cccccc; line-height: 2;">駐車場・アプローチ・門まわり・庭など、住まいの外まわりを美しく快適に仕上げます。</p>
+  <h3 style="color: #FFFFFF; margin-top: 80px;">カーポート施工</h3>
+  <div style="display: flex; gap: 15px; justify-content: center;">
+    <img src="カーポート２.jpg" alt="カーポート施工中" style="width: 48%; height: auto; object-fit: cover;">
+    <img src="カーポート１.jpg" alt="カーポート完成写真" style="width: 48%; height: auto; object-fit: cover;">
+  </div>
+  <h3 style="color: #FFFFFF; margin-top: 80px;">フェンス・目隠し施工</h3>
+  <img src="フェンス.jpg" alt="フェンス・目隠し施工の写真" style="width: 100%; max-width: 800px; height: auto;">
+  <h3 style="color: #FFFFFF; margin-top: 80px;">ウッド・タイルデッキ施工</h3>
+  <div style="display: flex; gap: 15px; justify-content: center;">
+    <img src="デッキ１.jpg" alt="デッキタイル施工中" style="width: 48%; height: auto; object-fit: cover;">
+    <img src="デッキ２.jpg" alt="デッキタイル施工中" style="width: 48%; height: auto; object-fit: cover;">
+  </div>
+  <h2 id="contact" style="color: #D8C6A0; margin-top: 150px;">
+    お問い合わせ
+  </h2>
+
+  <p style="color: #cccccc; line-height: 2;">
+    工事のご相談、お見積りは<br>
+    お気軽にお問い合わせください。
+  </p>
+
+  <div style="max-width: 500px; margin: 30px auto;">
+
+    <a href="tel:08091076833"
+       style="display: block; padding: 15px; margin: 15px 0; border: 1px solid #D8C6A0; color: #D8C6A0; text-decoration: none;">
+      電話で問い合わせる
+    </a>
+
+    <a href="mailto:s.c.rex@outlook.jp"
+       style="display: block; padding: 15px; margin: 15px 0; border: 1px solid #D8C6A0 ; color: #D8C6A0; text-decoration: none;">
+      メールで問い合わせる
+    </a>
+
+    <a href="https://line.me/ti/p/Y_huWLsvZD"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="display: block; padding: 15px; margin: 15px 0; border: 1px solid #D8C6A0 ; color: #D8C6A0; text-decoration: none;">
+      LINEで相談する
+    </a>
+
+    <h3 style="color: #D8C6A0; margin-top: 50px; text-align: center;">
+      お問い合わせフォーム
+    </h3>
+
+    <form action="https://formspree.io/f/maeevkvv"
+          method="POST"
+          style="text-align: left;">
+        
+      <label for="contact-name" style="color: #D8C6A0;">
+        お名前
+      </label>
+      <input id="contact-name" type="text" name="name" required
+             style="width: 100%; box-sizing: border-box; padding: 12px; margin: 10px 0 20px;">
+            
+      <label for="contact-email" style="color: #D8C6A0;">
+        メールアドレス
+      </label>
+      <input id="contact-email" type="email" name="email" required
+             style="width: 100%; box-sizing: border-box; padding: 12px; margin: 10px 0 20px;">
+
+      <label for="contact-message" style="color: #D8C6A0;">
+        お問い合わせ内容
+      </label>
+      <textarea id="contact-message" name="message" rows="6" required
+                style="width: 100%; box-sizing: border-box; padding: 12px; margin: 10px 0 20px;"></textarea>
+
+      <button type="submit"
+              style="width: 100%; padding: 15px; background: #D8C6A0; color: #08090B; border: none; cursor: pointer; font-size: 16px;">
+            送信する
+      </button>
+
+      </form>
+
+      <p style="color: #999999; font-size: 12px; line-height: 1.8;">
+        ご入力いただいた情報は、お問い合わせへの対応に使用します。
+      </p>
+  </div>
+  </body>
+  </html>
