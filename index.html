@@ -84,9 +84,48 @@ img{
   text-decoration: none;
   padding: 12px 20px;
 }
+/* オープニング画面 */
+#opening {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: openingEnd 0.6s ease 2s forwards;
+}
+
+#opening img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  animation: logoAppear 0.7s ease-out both;
+}
+
+@keyframes logoAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.5) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes openingEnd {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 </style>
 </head>
 <body>
+  <div id="opening">
+    <img src="会社ロゴ.png" type="S.C.REXロゴ">
+</div>
   <header>
     <span>S.C.REX</span>
     <button class="menu-button" onclick="document.querySelector('.menu-list').classList.toggle('open')">MENU ≡</button>
