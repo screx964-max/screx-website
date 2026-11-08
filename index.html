@@ -25,8 +25,8 @@
 
     body {
         margin: 0;
-        background: #f9f5f5;
-        color: white;
+        background: #fff;
+        color: ##222222;
         text-align: center;
         font-family: 'Yuji Syuku', serif;
         padding: 0 20px
@@ -99,7 +99,7 @@
     #opening {
         position: fixed;
         inset: 0;
-        background: #000;
+        background: #fff;
         z-index: 9999;
         display: flex;
         align-items: center;
@@ -111,6 +111,7 @@
         width: 80%;
         max-width: 500px;
         height: auto;
+        border: none !important;
         animation: logoAppear .7s ease-out both
     }
 
@@ -287,8 +288,8 @@ header {
 </head>
 
 <body>
-<div id="opening"><img src="会社ロゴ.png" alt="S.C.REXロゴ"></div>
-<header><img src="会社ロゴ.png" style="width: 70px;height:35px;object-fit:contain;border:0;margin:0;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
+<div id="opening"><img src="新ロゴ.png" alt="S.C.REXロゴ"></div>
+<header><img src="新ロゴ.png" style="width: 70px;height:35px;object-fit:contain;border:0;margin:0;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
         onclick="const n=document.querySelector('.menu-list');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o))">≡
     </button>
     <nav id="site-menu" class="menu-list">
