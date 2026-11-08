@@ -291,12 +291,14 @@ header {
 <header><img src="会社ロゴ.png" style="width: 70px;height:35px;object-fit:contain;border:0;margin:0;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
         onclick="const n=document.querySelector('.menu-list');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o))">≡
     </button>
-    <nav id="site-menu" class="menu-list"><a href="#about"
-            onclick="document.querySelector('.menu-list').classList.remove('open')">私たちについて</a><a href="#services"
-            onclick="document.querySelector('.menu-list').classList.remove('open')">事業内容</a><a href="#projects"
-            onclick="document.querySelector('.menu-list').classList.remove('open')">施工事例</a><a href="#company"
-            onclick="document.querySelector('.menu-list').classList.remove('open')">会社概要</a><a href="#contact"
-            onclick="document.querySelector('.menu-list').classList.remove('open')">お問い合わせ</a></nav>
+    <nav id="site-menu" class="menu-list">
+    <a href="#" onclick="document.querySelector('.menu-list').classList.remove('open')">トップへ戻る</a>
+  <a href="#about" onclick="document.querySelector('.menu-list').classList.remove('open')">私たちについて</a>
+  <a href="#services" onclick="document.querySelector('.menu-list').classList.remove('open')">事業内容</a>
+  <a href="#projects" onclick="document.querySelector('.menu-list').classList.remove('open')">施工事例</a>
+  <a href="#company" onclick="document.querySelector('.menu-list').classList.remove('open')">会社概要</a>
+  <a href="#contact" onclick="document.querySelector('.menu-list').classList.remove('open')">お問い合わせ</a>    
+    </nav>
 </header>
 <div class="logo-space" style="height:80px"></div><video autoplay muted loop playsinline
     style="width:100%;min-width:320px;max-width:100%;height:auto;border:0">
