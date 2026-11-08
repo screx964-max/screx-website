@@ -262,13 +262,28 @@
   top: 65px;
   right: 15px;
   z-index: 1000;
-}    
+} 
+.header-logo {
+  width: 115px;
+  height: 48px;
+  object-fit: contain;
+  border: 0;
+  margin: 0;
+}
+header {
+  padding: 5px 0 !important;
+  height: 55px !important;
+  min-height: 0 !important;
+}
+.logo-space {
+  height: 15px !important;
+}   
 </style>
 </head>
 
 <body>
 <div id="opening"><img src="会社ロゴ.png" alt="S.C.REXロゴ"></div>
-<header><span>S.C.REX</span><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
+<header><img src="会社ロゴ.png" style="width: 70px;height:35px;object-fit:contain;border:0;margin:0;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
         onclick="const n=document.querySelector('.menu-list');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o))">≡
     </button>
     <nav id="site-menu" class="menu-list"><a href="#about"
@@ -280,7 +295,7 @@
 </header>
 <div class="logo-space" style="height:80px"></div><video autoplay muted loop playsinline
     style="width:100%;min-width:320px;max-width:100%;height:auto;border:0">
-    <source src="logo.mp4" type="video/mp4">
+    <source src="screx-slideshow.mp4" type="video/mp4">
 </video>
 <p>暮らしのその先へ</p>
 <h1 style="font-size:24px;margin:0">株式会社S.C.REX｜福岡県の外構工事・エクステリア工事</h1>
