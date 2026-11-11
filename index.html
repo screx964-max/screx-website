@@ -29,7 +29,7 @@
         color: ##222222;
         text-align: center;
         font-family: 'Yuji Syuku', serif;
-        padding: 0 20px
+        padding: 0 ;
     }
 
     h1 {
@@ -251,15 +251,15 @@
 
 .menu-button {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 2px;
+  right: 10px;
   z-index: 1001;
-  background: #000;
+  background: transparent;
   color: #D8C6A0;
-  border: 1px solid #D8C6A0;
+  border: none;
   border-radius: 6px;
   padding: 10px 14px;
-  font-size: 24px;
+  font-size: 34px;
   cursor: pointer;
 }
 
@@ -290,7 +290,7 @@ header {
 
 <body>
 <div id="opening"><img src="新ロゴ.png" alt="S.C.REXロゴ"></div>
-<header><img src="新ロゴ.png" style="width: 70px;height:35px;object-fit:contain;border:0;margin:0;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
+<header><img src="新ロゴ.png" style="width: 100px;height:50px;object-fit:contain;border:0;margin:0 px;position: relative;top:4px;"><button class="menu-button" aria-expanded="false" aria-controls="site-menu"
         onclick="const n=document.querySelector('.menu-list');const o=n.classList.toggle('open');this.setAttribute('aria-expanded',String(o))">≡
     </button>
     <nav id="site-menu" class="menu-list">
@@ -302,11 +302,13 @@ header {
   <a href="#contact" onclick="document.querySelector('.menu-list').classList.remove('open')">お問い合わせ</a>    
     </nav>
 </header>
-<h1 style="position:absolute;top:45%;left:0;width:100%;z-index:5;font-size:24px;margin:0;color:white;text-align:center;">株式会社S.C.REX｜福岡県の外構工事・エクステリア工事</h1>
-<div class="logo-space" style="height:100vh;position:relative;overflow:hidden;"></div><video autoplay muted loop playsinline
-    style="position:absolute;inset:0;width:100%;height: 100%;object-fit:cover;border:0">
-    <source src="screx-mobile.mp4" type="video/mp4">
+
+<div class="logo-space" style="width:100vw;height:100vh;position:relative;overflow: hidden;">
+    <video autoplay muted loop playsinline style="position:absolute;inset:0;width:100%;height: 100%;object-fit:cover;border:0">
+    <source src="screx-slideshow.mp4" type="video/mp4" media="(min-width: 769px)">
+<source src="screx-mobile.mp4" type="video/mp4">
 </video>
+</div>
 
 <h2 id="about" class="section-title"
 style="background:linear-gradient(#0006,#0006),url('about.jpg') center/cover;
